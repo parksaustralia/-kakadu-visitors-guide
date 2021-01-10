@@ -1,12 +1,11 @@
 import * as React from "react";
-// import { color } from "react-native-reanimated";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Button, View, Text } from "react-native";
-import { useNavigation, NavigationContainer } from "@react-navigation/native";
+import { StyleSheet, View, Text } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
 import HomeScreen from "./src/Home";
 
@@ -155,9 +154,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    // alignItems: "top",
     backgroundColor: "#fff",
     flex: 1,
-    // justifyContent: "center",
   },
 });
