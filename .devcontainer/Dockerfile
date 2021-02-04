@@ -3,6 +3,8 @@
 ARG VARIANT=14
 FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
